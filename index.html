@@ -7,10 +7,21 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="BinitJha">
+  <meta name="description" content="Portfolio of Binit Kumar Jha — AI/ML Engineer specializing in machine learning, data engineering, and cloud (GCP/AWS). Projects, resume, and contact details.">
+  <meta name="keywords" content="Binit Jha, AI Engineer, ML Engineer, Data Science, Machine Learning, Deep Learning, GCP, AWS, Terraform, Portfolio, Resume">
   <!-- Page Title -->
   <title>Binit Jha - Personal Portfolio</title>
   <!-- Favicon Icon -->
   <link rel="icon" href="assets/img/favicon.png" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Binit Kumar Jha — AI/ML Engineer" />
+  <meta property="og:description" content="AI/ML Engineer focusing on ML, data engineering, and cloud. Explore projects and resume." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/author.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Binit Kumar Jha — AI/ML Engineer" />
+  <meta name="twitter:description" content="AI/ML Engineer focusing on ML, data engineering, and cloud. Explore projects and resume." />
+  <meta name="twitter:image" content="assets/img/author.jpg" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/fontawesome.css" />
@@ -18,6 +29,24 @@
   <link rel="stylesheet" href="assets/css/lightgallery.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Binit Kumar Jha",
+    "jobTitle": "AI/ML Engineer",
+    "email": "mailto:binitjha2000@gmail.com",
+    "url": "/",
+    "sameAs": [
+      "https://github.com/Binitjha2000",
+      "https://www.linkedin.com/in/binit-kumar-jha-8522b4167/",
+      "https://www.instagram.com/s_jbinit/"
+    ]
+  }
+  </script>
 </head>
 
 <body id="home">
@@ -35,10 +64,13 @@
                 <li><a href="#home" class="st-smooth-move">Home</a></li>
                 <li><a href="#about" class="st-smooth-move">About</a></li>
                 <li><a href="#resume" class="st-smooth-move">Resume</a></li>
-                <li><a href="#portfolio" class="st-smooth-move">Portfolio</a></li>
+                <li><a href="#portfolio" class="st-smooth-move">Experience</a></li>
+                <li><a href="#certifications" class="st-smooth-move">Certifications</a></li>
                 <li><a href="#blog" class="st-smooth-move">Blog</a></li>
                 <li><a href="#contact" class="st-smooth-move">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
               </ul>
+              <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
               <div class="sp-phone">
                 <svg viewBox="0 0 513.64 513.64">
                   <g>
@@ -73,18 +105,18 @@
       </div>
     </div>
     <div class="st-hero-img st-to-right">
-      <img class="wow fadeInRight" src="assets/img/section/hero-img.jpg" alt="Hero" alt="Binit">
+      <img class="wow fadeInRight" src="assets/img/section/hero-img.jpg" alt="Binit hero image" loading="eager" decoding="async">
       <div class="st-social-group wow fadeInLeft">
         <div class="st-social-link">
-          <a href="https://github.com/Binitjha2000" class="st-social-btn">
+          <a href="https://github.com/Binitjha2000" class="st-social-btn" aria-label="GitHub profile">
             <span class="st-social-icon"><i class="fab fa-github"></i></span>
             <span class="st-icon-name">Github</span>
           </a>
-          <a href="https://www.linkedin.com/in/binit-kumar-jha-8522b4167/" class="st-social-btn">
+          <a href="https://www.linkedin.com/in/binit-kumar-jha-8522b4167/" class="st-social-btn" aria-label="LinkedIn profile">
             <span class="st-social-icon"><i class="fab fa-linkedin"></i></span>
             <span class="st-icon-name">LinkedIn</span>
           </a>
-          <a href="https://www.instagram.com/s_jbinit/" class="st-social-btn">
+          <a href="https://www.instagram.com/s_jbinit/" class="st-social-btn" aria-label="Instagram profile">
             <span class="st-social-icon"><i class="fab fa-instagram"></i></span>
             <span class="st-icon-name">Insta</span>
           </a>
@@ -124,6 +156,15 @@
                 <div class="st-text-block-text">
                   <p>I am an AI/ML Engineer with expertise in machine learning, deep learning, and data analysis. Currently pursuing M.Tech in Artificial Intelligence and Machine Learning at BITS Pilani while working as an Associate at Cognizant Technology Solutions.</p>
                 </div>
+                <div class="st-text-block-text">
+                  <h5 style="margin-top:10px;">Professional Summary</h5>
+                  <ul id="summary-list">
+                    <!-- populated from assets/data/profile.json; fallback items below -->
+                    <li>Design and deploy ML/ETL solutions on cloud (GCP/AWS) with strong MLOps practices.</li>
+                    <li>Build data pipelines (Airflow/Composer, Kafka) and automate workflows to reduce manual effort.</li>
+                    <li>Hands-on with Python, TensorFlow/PyTorch, scikit-learn, and Terraform for infra as code.</li>
+                  </ul>
+                </div>
                 <ul class="st-text-block-details st-mp0">
                   <li><span>Phone</span> : <span>+91 7016153673</span></li>
                   <li><span>Email</span> : <span>binitjha2000@gmail.com</span></li>
@@ -136,7 +177,8 @@
                   <!-- <li><span>Working</span> : <span> Associate at Cognizant</span></li> -->
                 </ul>
                 <div class="st-text-block-btn">
-                  <a href="assets/docs/Binit_Jha_CV.pdf" download class="st-btn st-style1 st-color1" target="_blank">Download CV</a>
+                  <a href="assets/docs/Binit_Jha_CV.pdf" download class="st-btn st-style1 st-color1" target="_blank" rel="noopener">Download CV</a>
+                  <a href="cv.html" class="st-btn st-style1" style="margin-left:10px;">View CV</a>
               </div>
               </div>
             </div>
@@ -153,74 +195,76 @@
     <div class="container">
       <div class="st-section-heading st-style1">
         <h4 class="st-section-heading-title">PROFESSIONAL EXPERTISE</h4>
-        <h2 class="st-section-heading-subtitle">EXPERIENCE</h2>
+        <h2 class="st-section-heading-subtitle">AI & MACHINE LEARNING</h2>
       </div>
       <div class="st-height-b25 st-height-lg-b25"></div>
     </div>
 
     <div class="container">
       <div class="row">
+        <!-- Generative AI & LLMs -->
+        <div class="col-lg-4 col-md-6">
+          <div class="st-iconbox st-style1">
+            <div class="st-iconbox-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12l2 2 4-4"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3 4-3 9-3 9 1.34 9 3Z"/>
+                <path d="M21 5c0 1.66-4 3-9 3S3 6.66 3 5s4-3 9-3 9 1.34 9 3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <h2 class="st-iconbox-title">Generative AI & LLMs</h2>
+            <div class="st-iconbox-text">
+              • RAG systems with LangChain and FAISS vector stores
+              • Fine-tuning LLMs with LoRA and PEFT techniques
+              • Google Agentspace AI orchestration for automation
+              • Hugging Face Transformers and model optimization
+              • Prompt engineering and context filtering
+            </div>
+          </div>
+          <div class="st-height-b30 st-height-lg-b30"></div>
+        </div>
+
+        <!-- Deep Learning & Neural Networks -->
+        <div class="col-lg-4 col-md-6">
+          <div class="st-iconbox st-style1">
+            <div class="st-iconbox-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v6m0 6v6"/>
+                <path d="m15.14 7.14l-4.28 4.28m0 0l-4.28 4.28"/>
+                <path d="m15.14 16.86l-4.28-4.28"/>
+              </svg>
+            </div>
+            <h2 class="st-iconbox-title">Deep Learning & Neural Networks</h2>
+            <div class="st-iconbox-text">
+              • CNNs for computer vision and image processing
+              • RNNs/LSTMs for time-series analysis and prediction
+              • Deep Q-Networks (DQN) for reinforcement learning
+              • TensorFlow and PyTorch model development
+              • AutoKeras for automated neural architecture search
+            </div>
+          </div>
+          <div class="st-height-b30 st-height-lg-b30"></div>
+        </div>
+
         <!-- Machine Learning & AI -->
         <div class="col-lg-4 col-md-6">
           <div class="st-iconbox st-style1">
             <div class="st-iconbox-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3a8.5 8.5 0 0 1 8.5 8.5c0 6.5-5.5 12-8.5 15-3-3-8.5-8.5-8.5-15A8.5 8.5 0 0 1 12 3Z"/>
-                <path d="M12 11v6"/>
-                <circle cx="12" cy="6" r="1"/>
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 1v6m0 6v6"/>
               </svg>
             </div>
             <h2 class="st-iconbox-title">Machine Learning & AI</h2>
             <div class="st-iconbox-text">
-              • Advanced modeling with scikit-learn, TensorFlow, PyTorch
-              • Developed ETL pipelines with advanced data processing
-              • Implemented Kafka stream data integration
-              • Real-time data processing and analysis solutions
-            </div>
-          </div>
-          <div class="st-height-b30 st-height-lg-b30"></div>
-        </div>
-
-        <!-- Cloud & Infrastructure -->
-        <div class="col-lg-4 col-md-6">
-          <div class="st-iconbox st-style1">
-            <div class="st-iconbox-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/>
-                <path d="M11 15h2"/>
-                <path d="M10 9h4"/>
-              </svg>
-            </div>
-            <h2 class="st-iconbox-title">Cloud & Infrastructure</h2>
-            <div class="st-iconbox-text">
-              • GCP Infrastructure design using Terraform
-              • Managed 50+ source system ETL processes
-              • Cloud Composer for data pipeline management
-              • CI/CD pipeline implementation
-              • Automated deployment with shell scripts
-            </div>
-          </div>
-          <div class="st-height-b30 st-height-lg-b30"></div>
-        </div>
-
-        <!-- Data Engineering -->
-        <div class="col-lg-4 col-md-6">
-          <div class="st-iconbox st-style1">
-            <div class="st-iconbox-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                <line x1="3" y1="9" x2="21" y2="9"/>
-                <line x1="9" y1="21" x2="9" y2="9"/>
-                <line x1="15" y1="21" x2="15" y2="9"/>
-              </svg>
-            </div>
-            <h2 class="st-iconbox-title">Data Engineering</h2>
-            <div class="st-iconbox-text">
-              • BigQuery data integration and management
-              • Python-based data manipulation with Pandas
-              • Reduced manual efforts by 30-40% through automation
-              • End-to-end project lifecycle management
-              • Comprehensive documentation and client training
+              • Supervised learning with scikit-learn and advanced algorithms
+              • Anomaly detection and fraud prevention systems
+              • MLflow for experiment tracking and model versioning
+              • Feature engineering and hyperparameter optimization
+              • Real-time ML inference and model deployment
             </div>
           </div>
           <div class="st-height-b30 st-height-lg-b30"></div>
@@ -247,7 +291,22 @@
           <div class="st-skill-wrap">
             <div class="st-skill-heading">
               <h2 class="st-skill-title">Technical Expertise</h2>
-              <div class="st-skill-subtitle">Proficient in various programming languages, frameworks, and cloud platforms with a focus on machine learning and data engineering.</div>
+              <div class="st-skill-subtitle">Proficient in cutting-edge AI/ML technologies, frameworks, and cloud platforms with focus on generative AI and deep learning.</div>
+              
+              <div class="chips-wrap">
+                <h4>💻 Programming & ML</h4>
+                <div id="skills-chips" class="chips-container"></div>
+              </div>
+              
+              <div class="chips-wrap">
+                <h4>☁️ Cloud & Tools</h4>
+                <div id="tools-chips" class="chips-container"></div>
+              </div>
+              
+              <div class="chips-wrap">
+                <h4>🧠 AI/ML Concepts</h4>
+                <div id="concepts-chips" class="chips-container"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -290,7 +349,7 @@
           <div class="st-height-b30 st-height-lg-b20"></div>
           <div class="st-single-progressbar">
           <div class="st-progressbar-heading">
-          <h3 class="st-progressbar-title">Shell Scripting</h3>
+          <h3 class="st-progressbar-title">Google Cloud Plateform</h3>
           <div class="st-progressbar-percentage wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">65%</div>
           </div>
           <div class="st-progressbar" data-progress="65">
@@ -299,7 +358,7 @@
               <div class="st-height-b30 st-height-lg-b20"></div>
       <div class="st-single-progressbar">
         <div class="st-progressbar-heading">
-          <h3 class="st-progressbar-title">Cloud Platforms (GCP/AWS) , DevOps & Terraform </h3>
+          <h3 class="st-progressbar-title">Azure Cloud </h3>
           <div class="st-progressbar-percentage wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">95%</div>
         </div>
         <div class="st-progressbar" data-progress="95">
@@ -339,7 +398,8 @@
 
             <div class="st-height-b50 st-height-lg-b30"></div>
 
-            <div class="st-resume-timeline-wrap">
+            <div id="experience-list"></div>
+            <div class="st-resume-timeline-wrap" id="experience-static">
               <div class="st-resume-timeline">
                 <h3 class="st-resume-timeline-title">Associate</h3>
                 <div class="st-resume-timeline-duration">Aug 2021 - Present</div>
@@ -389,7 +449,8 @@
             </div>
             <div class="st-height-b50 st-height-lg-b30"></div>
 
-            <div class="st-resume-timeline-wrap">
+            <div id="education-list"></div>
+            <div class="st-resume-timeline-wrap" id="education-static">
               <div class="st-resume-timeline">
                 <h3 class="st-resume-timeline-title">M.Tech in Artificial Intelligence and Machine Learning</h3>
                 <div class="st-resume-timeline-duration">Expected May 2025</div>
@@ -413,6 +474,7 @@
         </div>
       </div>
     </div>
+    <div class="st-height-b100 st-height-lg-b80"></div>
   </section>
 
   <!-- Portfolio Section -->
@@ -421,107 +483,85 @@
     <div class="container">
       <div class="st-section-heading st-style1">
         <h4 class="st-section-heading-title">PROJECTS</h4>
-        <h2 class="st-section-heading-subtitle">MY WORKS</h2>
+        <h2 class="st-section-heading-subtitle">AI/ML PORTFOLIO</h2>
       </div>
       <div class="st-height-b25 st-height-lg-b25"></div>
+      <div class="text-center">
+        <p style="color: #888; font-size: 16px; max-width: 600px; margin: 0 auto 40px; line-height: 1.6;">
+          A collection of machine learning and AI projects showcasing expertise in NLP, deep learning, 
+          computer vision, and real-world applications from chatbots to fraud detection systems.
+        </p>
+      </div>
     </div>
     <div class="container">
-      <div class="row">
-        <!-- Project 1 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="st-portfolio-single st-style1">
-            <div class="st-portfolio-item">
-              <div class="st-portfolio st-zoom">
-                <div class="st-portfolio-img st-zoom-in">
-                  <img src="assets/img/portfolio/ai-project.jpg" alt="portfolio"><h5>Predictive Maintenance for Industrial Machinery</h5>
-                </div>
-                <div class="st-portfolio-item-hover">
-                  <!-- <h5>Predictive Maintenance for Industrial Machinery</h5> -->
-                  <p>Python, scikit-learn, Pandas, NumPy</p>
-                  <ul>
-                    <li>RNNs/LSTMs for time-series analysis</li>
-                    <li>Prediction model using NASA's Turbofan Dataset</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="st-portfolio-single st-style1">
-            <div class="st-portfolio-item">
-              <div class="st-portfolio st-zoom">
-                <div class="st-portfolio-img st-zoom-in">
-                  <img src="assets/img/portfolio/space-project.jpg" alt="portfolio"><h5>Deep Reinforcement Learning for Spaceship Navigation</h5>
-                </div>
-                <div class="st-portfolio-item-hover">
-                  <!-- <h5>Deep Reinforcement Learning for Spaceship Navigation</h5> -->
-                  <p>CNN, TensorFlow, OpenAI Gym</p>
-                  <ul>
-                    <li>DQN with CNNs for navigation</li>
-                    <li>Real-time decision-making system</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="st-portfolio-single st-style1">
-            <div class="st-portfolio-item">
-              <div class="st-portfolio st-zoom">
-                <div class="st-portfolio-img st-zoom-in">
-                  <img src="assets/img/portfolio/nlp-project.jpg" alt="portfolio"><h5>Text Summarization and Translation System</h5>
-                </div>
-                <div class="st-portfolio-item-hover">
-                  <!-- <h5>Text Summarization and Translation System</h5> -->
-                  <p>T5, GPT-2, BERT, Transformers library</p>
-                  <ul>
-                    <li>Implemented T5 for summarization</li>
-                    <li>BERT for masked language modeling</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="st-portfolio-single st-style1">
-            <div class="st-portfolio-item">
-              <div class="st-portfolio st-zoom">
-                <div class="st-portfolio-img st-zoom-in">
-                  <img src="assets/img/portfolio/ml-project.jpg" alt="portfolio"><h5>Customer Churn Prediction Model</h5>
-                </div>
-                <div class="st-portfolio-item-hover">
-                  <!-- <h5>Customer Churn Prediction Model</h5> -->
-                  <p>Scikit-learn, AWS SageMaker, Lambda, S3</p>
-                  <ul>
-                    <li>ML model with cross-validation</li>
-                    <li>Deployed on AWS SageMaker</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row" id="portfolio-row">
+        <!-- Portfolio items will be dynamically loaded here -->
       </div>
     </div>
   </section>
   <!-- End Portfolio Seciton -->
+
+  <!-- Start Certifications Section -->
+  <section id="certifications" class="st-about-wrap">
+    <div class="st-height-b100 st-height-lg-b80"></div>
+    <div class="container">
+      <div class="st-section-heading st-style1">
+        <h4 class="st-section-heading-title">CERTIFICATIONS</h4>
+        <h2 class="st-section-heading-subtitle">PROFESSIONAL</h2>
+      </div>
+      <div class="st-height-b25 st-height-lg-b25"></div>
+      
+      <div class="row">
+        <!-- Google Cloud Professional Machine Learning Engineer -->
+        <div class="col-lg-6 col-md-6">
+          <div class="st-iconbox st-style2 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            <div class="st-iconbox-icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="st-iconbox-info">
+              <h4 class="st-iconbox-title">Google Cloud Professional Machine Learning Engineer</h4>
+              <div class="st-iconbox-text">
+                Professional certification demonstrating expertise in designing, building, and productionizing ML models using Google Cloud Platform services including Vertex AI, BigQuery ML, and TensorFlow.
+              </div>
+              <div class="st-cert-actions">
+                <a href="https://drive.google.com/file/d/1NnvFcAs9cceu4TZega3cp66BpxcNdkQw/view" target="_blank" rel="noopener" class="st-btn st-style1 st-color1">
+                  <i class="fas fa-certificate"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- GCP Cloud Architect -->
+        <div class="col-lg-6 col-md-6">
+          <div class="st-iconbox st-style2 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.4s">
+            <div class="st-iconbox-icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="st-iconbox-info">
+              <h4 class="st-iconbox-title">Google Cloud Professional Cloud Architect</h4>
+              <div class="st-iconbox-text">
+                Designing and implementing scalable, reliable, and secure cloud solutions on Google Cloud Platform. Expertise in cloud architecture patterns, security, and enterprise-grade solutions.
+              </div>
+              <div class="st-cert-actions">
+                <span class="st-cert-status">In Progress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="st-height-b100 st-height-lg-b80"></div>
+  </section>
+  <!-- End Certifications Section -->
 
   <!-- Start Review Seciton -->
   <section class="st-dark-bg">
     <div class="st-height-b100 st-height-lg-b80"></div>
     <div class="container">
       <div class="st-section-heading st-style1">
-        <h4 class="st-section-heading-title">ACHIEVEMENTS</h4>
-        <h2 class="st-section-heading-subtitle">KEY HIGHLIGHTS</h2>
+        <h4 class="st-section-heading-title">ACHIEVEMENTS & ENGAGEMENTS</h4>
+        <h2 class="st-section-heading-subtitle">HIGHLIGHTS & IMPACT</h2>
       </div>
       <div class="st-height-b25 st-height-lg-b25"></div>
     </div>
@@ -540,17 +580,6 @@
                   <h3><i class="fas fa-book-reader"></i></h3>
                   <h4>Research & Publications</h4>
                   <p>Technical blog posts and research work in AI/ML, focusing on deep learning and reinforcement learning applications.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Certifications -->
-            <div class="slick-slide-in">
-              <div class="st-testimonial st-style1 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                <div class="st-testimonial-text">
-                  <h3><i class="fas fa-certificate"></i></h3>
-                  <h4>Professional Certifications</h4>
-                  <p>Industry-recognized certifications in Machine Learning, Cloud Platforms (GCP/AWS), and Data Engineering.</p>
                 </div>
               </div>
             </div>
@@ -624,41 +653,11 @@
     </div>
   
     <div class="container">
-      <div class="row">
-        <!-- Blog Post 1 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="st-blog-card st-style1">
-            <div class="st-blog-img">
-              <img src="assets/img/blog/blog1.jpg" alt="blog1" width="341" height="400">
-            </div>
-            <div class="st-blog-info">
-              <div class="st-blog-date">
-                <span class="st-blog-date-day">15</span>
-                <span class="st-blog-date-month">Mar</span>
-              </div>
-              <h3 class="st-blog-title">
-                <a href="blog-details.html" target="_blank">Foundation in Machine Learning</a>
-              </h3>
-              <div class="st-blog-text">
-                This  outlines a structured learning path for individuals interested in mastering
-machine learning (ML). It provides a comprehensive guide to the essential topics, tools, and
-resources necessary to build a solid foundation in ML, catering to beginners as well as those
-looking to deepen their understanding....
-              </div>
-              <div class="st-blog-meta">
-
-                <div class="st-blog-meta-right">
-                  <br>
-                  <a href="blog-details.html" class="st-blog-btn"><b>Read More</b> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="st-height-b30 st-height-lg-b30"></div>
-        </div>
-        <!-- End Blog Post 1 -->
-  
-        <!-- Add more blog posts in the same structure -->
+      <div class="row" id="medium-feed">
+        <!-- Medium posts will be injected here; fallback content below if loading fails -->
+      </div>
+      <div class="text-center" style="margin-top:16px;">
+        <a class="st-btn st-style1" href="https://medium.com/@binitjha2000" target="_blank" rel="noopener">See more on Medium</a>
       </div>
     </div>
     <div class="st-height-b100 st-height-lg-b80"></div>
@@ -803,7 +802,7 @@ looking to deepen their understanding....
                   <span class="st-social-icon"><i class="fab fa-instagram"></i></span>
                   <span class="st-icon-name">Insta</span>
                 </a>
-                <a href="https://treandingtech804976769.wordpress.com/blog/" class="st-social-btn">
+                <a href="https://medium.com/@binitjha2000" class="st-social-btn">
                   <span class="st-social-icon"><i class="fas fa-blog"></i></span>
                   <span class="st-icon-name">Blog</span>
                 </a>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://binitjha2000.github.io/sitemap.xml

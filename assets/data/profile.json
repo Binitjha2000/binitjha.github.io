@@ -1,0 +1,177 @@
+{
+  "summary": [
+    "AI/ML Engineer with expertise in developing AI agents, anomaly detection systems, and RAG-based solutions",
+    "Experience in orchestrating AI workflows using Google Agentspace and Azure OpenAI for intelligent automation",
+    "Proficient in building scalable ML infrastructure on GCP and Azure with automated ETL pipelines",
+    "Strong background in deep learning, NLP, and reinforcement learning with hands-on project experience",
+    "Certified GCP Machine Learning Professional with proven track record in production ML systems"
+  ],
+  "certifications": [
+    "GCP Certified Machine Learning Professional"
+  ],
+  "skills": [
+    "Python",
+    "SQL", 
+    "Linux",
+    "TensorFlow",
+    "scikit-learn",
+    "Pandas",
+    "NumPy",
+    "NLTK",
+    "spaCy",
+    "LangChain",
+    "Hugging Face Transformers",
+    "FAISS",
+    "MLflow",
+    "AutoKeras",
+    "Docker"
+  ],
+  "tools": [
+    "Google Cloud Platform (GCP)",
+    "Azure Databricks",
+    "BigQuery",
+    "Dataflow",
+    "Kafka",
+    "Azure OpenAI",
+    "Azure Cognitive Search",
+    "Terraform",
+    "OpenAI Gym"
+  ],
+  "skillBars": [
+    { "title": "Python & ML Libraries", "percentage": 95 },
+    { "title": "Deep Learning", "percentage": 90 },
+    { "title": "Cloud Platforms (GCP/AZURE) & Terraform", "percentage": 85 }
+  ],
+  "concepts": [
+    "Machine Learning (Regression, Classification, Clustering)",
+    "Deep Learning (CNNs, RNNs, LSTMs, Transformers)",
+    "Reinforcement Learning (DQN)",
+    "Generative AI",
+    "Natural Language Processing",
+    "Data Analysis",
+    "Data Visualization",
+    "Feature Engineering", 
+    "Model Evaluation",
+    "Hyperparameter Tuning",
+    "MLOps",
+    "DevOps",
+    "Time Series Analysis",
+    "Anomaly Detection",
+    "Retrieval-Augmented Generation (RAG)"
+  ],
+  "projects": {
+    "predictive": "https://github.com/binitjha/predictive-maintenance",
+    "drl": "https://github.com/binitjha/spaceship-navigation-drl", 
+    "nlp": "https://github.com/binitjha/agentai-support-chatbot",
+    "churn": "https://github.com/binitjha/fraud-detection-system"
+  },
+  "experience": [
+    {
+      "title": "Associate",
+      "company": "Cognizant Technology Solutions",
+      "location": "Bengaluru, India",
+      "start": "Sep 2021",
+      "end": "Present",
+      "bullets": [
+        "Orchestrated AI agents via Google Agentspace to proactively detect and prioritize billing discrepancies",
+        "Developed automated pipelines on GCP, utilizing BigQuery and Dataflow, to integrate diverse billing, usage, and contract data for AI-driven anomaly detection",
+        "Designed and implemented a multi-layered AI/ML detection framework, integrating rule-based systems with unsupervised anomaly detection",
+        "Applied Time Series Analysis for pattern recognition and utilized supervised classification models (Logistic Regression, SVM, Gradient Boosting)",
+        "Designed and implemented Agentic AI workflows within Agentspace for intelligent dispute communication analysis and automated invoice line item matching",
+        "Architected Azure infrastructure for a Retrieval-Augmented Generation chatbot, leveraging Azure OpenAI and Azure Cognitive Search",
+        "Engineered the integration and maintenance of Azure Blob Storage as the chatbot's knowledge repository, optimizing for efficient indexing and semantic retrieval",
+        "Built Python pipelines for RAG, integrating Azure OpenAI embeddings, Azure Cognitive Search vector capabilities, and contextual data retrieval",
+        "Designed/implemented scalable GCP infrastructure (Terraform) for 50+ ETL pipelines supporting ML datasets",
+        "Integrated Kafka streams into BigQuery for real-time ML data processing",
+        "Achieved 30-40% manual effort reduction via Python automation for various workflows"
+      ]
+    },
+    {
+      "title": "Data Analyst",
+      "company": "The Sparks Foundation",
+      "location": "Remote",
+      "start": "May 2020",
+      "end": "Jul 2020",
+      "bullets": [
+        "Developed a predictive model to forecast sales for a retail store using historical sales data",
+        "Performed data cleaning and preprocessing to handle missing values and outliers",
+        "Utilized regression techniques and time series analysis to predict future sales trends",
+        "Presented findings and recommendations through interactive visualizations and reports"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Tech in Artificial Intelligence and Machine Learning",
+      "school": "BITS Pilani",
+      "end": "Expected July 2025",
+      "details": "Advanced studies in AI/ML focusing on machine learning algorithms and artificial intelligence applications"
+    },
+    {
+      "degree": "B.E in Electronics and Communication",
+      "school": "Sir M. Visvesvaraya Institute of Technology",
+      "end": "May 2021",
+      "details": "CGPA: 7.82/10, Bangalore, India"
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "AgentAI Support Chatbot",
+      "stack": "NLP, RAGs, GENAI, Python, LangChain, Hugging Face",
+      "bullets": [
+        "Developed an intent-driven chatbot to automate task execution by accurately understanding user requests",
+        "Engineered a Retrieval-Augmented Generation (RAG) system using LangChain, Hugging Face Transformers and FAISS",
+        "Developed a semantic knowledge base using Hugging Face embeddings and a FAISS vector store for accurate retrieval",
+        "Leveraged the google/flan-t5-large language model via Hugging Face Transformers for generating accurate and coherent responses"
+      ],
+      "image": "assets/img/portfolio/nlp-project.jpg",
+      "repo": "https://github.com/binitjha/agentai-support-chatbot"
+    },
+    {
+      "title": "LoRA Fine-tuning for DistilBERT on SST-2",
+      "stack": "Hugging Face Transformers, PEFT, DistilBERT",
+      "bullets": [
+        "Implemented LoRA fine-tuning for DistilBERT on SST-2, dramatically reducing trainable parameters while maintaining performance",
+        "Achieved comparable accuracy to full fine-tuning with 1.8% of total parameters trained",
+        "Applied LoRA adapters across DistilBERT's Transformer layers, including attention and feed-forward matrices",
+        "Utilized Hugging Face Transformers and PEFT for streamlined model and LoRA configuration"
+      ],
+      "image": "assets/img/portfolio/ai-project.jpg",
+      "repo": "https://github.com/binitjha/lora-distilbert-sst2"
+    },
+    {
+      "title": "Real-time Fraud Detection System",
+      "stack": "scikit-learn, AutoKeras, MLflow, Python",
+      "bullets": [
+        "Developed a real-time fraud detection system using Python and Scikit-learn for model training",
+        "Implemented an MLflow tracking system to manage experiments, model versions, and deployments",
+        "Utilized a publicly available fraud detection dataset (IEEE-CIS Fraud Detection) for model training and evaluation",
+        "Processing and analyzing the data efficiently for real-time fraud detection"
+      ],
+      "image": "assets/img/portfolio/ml-project.jpg",
+      "repo": "https://github.com/binitjha/fraud-detection-system"
+    },
+    {
+      "title": "Predictive Maintenance for Industrial Machinery",
+      "stack": "Python, TensorFlow, Pandas, NumPy, LSTM",
+      "bullets": [
+        "Utilized Long Short-Term Memory (LSTM) networks for analyzing and predicting time-series data related to machinery performance",
+        "Designed and implemented a LSTM model tailored to predict failures based on historical sensor data from NASA's Turbofan Engine Degradation Dataset",
+        "Focused on feature engineering, model training, and evaluation to accurately predict potential machinery failures"
+      ],
+      "image": "assets/img/portfolio/ai-project.jpg",
+      "repo": "https://github.com/binitjha/predictive-maintenance"
+    },
+    {
+      "title": "Deep Reinforcement Learning for Autonomous Spaceship Navigation",
+      "stack": "CNN, TensorFlow, OpenAI Gym, DQN",
+      "bullets": [
+        "Developed a Deep Q-Network (DQN) agent with Convolutional Neural Networks (CNNs) for navigating a spaceship through a simulated asteroid field",
+        "Implemented and rigorously tested the DQN agent, focusing on optimizing its learning strategy for survival and collision avoidance",
+        "Demonstrated expertise in deep reinforcement learning principles and real-time decision-making in a challenging simulated environment"
+      ],
+      "image": "assets/img/portfolio/space-project.jpg",
+      "repo": "https://github.com/binitjha/spaceship-navigation-drl"
+    }
+  ]
+}
